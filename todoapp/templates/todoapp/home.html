@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% load static %}
+
+
+{% block title %}
+ <title>home</title>
+
+{% endblock title %}
+
+{% block content %}
+
+    <div class="container">
+      <div class="row mt-5 ">
+
+
+              <div class="col-4 "><img src="{% static 'images/truth.jpg' %}" width=100% height=300 class="responsive"  ></div>
+              <div class="col-4 "><img src="{% static 'images/sparkle.jpg' %}" width=100% height=300 class="responsive" ></div>
+              <div class="col-4 "><img src="{% static 'images/wisdom.jpg' %}" width=100% height=300 class="responsive" ></div>
+
+      </div>
+      <p></p>
+      </br>
+      <div class="text-center">
+      <h1>Welcome to our home page!</h1>
+      <h3>This is a simple website where you can track your todo things!</h3>
+      <h2>Register and get started ...</h2>
+      </div>
+    </div>
+
+{% endblock %}
